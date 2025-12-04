@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# إنشاء ملفات المشروع
+mkdir -p assets
+mkdir -p js
+mkdir -p css
+
+# إنشاء اللوغو (سيتم استبداله لاحقاً)
+cat <<EOF > assets/logo.txt
+Temporary logo file - Will be replaced by final Neon logo
+EOF
+
+# CSS - Modern UI + Dark mode
+cat <<'EOF' > css/style.css
+/* سيتم استبداله بالنسخة النهائية بعد الرفع */
+body {
+    font-family: "Cairo", sans-serif;
+    background: #f5f5f5;
+}
+EOF
+
+# JavaScript placeholder
+cat <<'EOF' > js/app.js
+// سيتم استبداله بالنسخة النهائية
+console.log("Integral App Ready");
+EOF
+
+# HTML placeholder
+cat <<'EOF' > index.html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<title>حساب التكامل المحدد</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>سيتم تحميل النسخة النهائية من التطبيق تلقائيًا</h1>
+<script src="js/app.js"></script>
+</body>
+</html>
+EOF
